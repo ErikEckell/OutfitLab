@@ -40,7 +40,7 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Diegoeyza/OufitLab.git
+   git clone https://github.com/ErikEckell/OutfitLab
    cd OufitLab
    ```
 
@@ -98,7 +98,7 @@ The Django backend provides RESTful API endpoints:
 
 1. **Clone and start:**
    ```bash
-   git clone https://github.com/Diegoeyza/OufitLab.git
+   git clone https://github.com/ErikEckell/OutfitLab
    cd OufitLab
    docker compose up --build
    ```
@@ -120,7 +120,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you have any questions or run into issues:
 
 1. Check the [Instructions.md](Instructions.md) for detailed setup help
-2. Look through existing [GitHub Issues](https://github.com/Diegoeyza/OufitLab/issues)
 
 ---
 

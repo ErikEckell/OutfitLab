@@ -14,7 +14,7 @@ This is the easiest way to get the entire application running with all dependenc
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Diegoeyza/OufitLab.git
+   git clone https://github.com/ErikEckell/OutfitLab
    cd OufitLab
    ```
 
