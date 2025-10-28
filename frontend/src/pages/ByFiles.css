@@ -1,0 +1,226 @@
+.byfiles-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 24px 96px;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: rgba(49, 49, 49, 0.85);
+}
+
+.byfiles-title {
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+  color: #ff9fc2;
+}
+
+.byfiles-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #444;
+  gap: 4px;
+}
+
+input, select {
+  padding: 10px 12px;
+  border: 1.8px solid #e0e0e0;
+  border-radius: 12px;
+  outline: none;
+  font-size: 15px;
+}
+
+input:focus, select:focus {
+  border-color: #ff9fc2;
+}
+
+.add-color-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.add-btn {
+  background: linear-gradient(135deg, #ff9fc2, #df7a96);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.add-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(223,122,150,0.35);
+}
+
+.choose-btn {
+  background: linear-gradient(135deg, #ff9fc2, #df7a96);
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 999px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.preview-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.preview-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.action-buttons button {
+  background: transparent;
+  border: none;
+  color: #df7a96;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+}
+
+.form-actions button {
+  background: linear-gradient(135deg, #ff9fc2, #df7a96);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 24px;
+  cursor: pointer;
+}
+
+.form-actions button:hover {
+  transform: translateY(-1px);
+}
+
+.error-message {
+  color: #ff5a5f;
+  font-size: 14px;
+}
+
+.success-message {
+  color: #2ecc71;
+  font-size: 14px;
+}
+
+/* popup reused */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  border-radius: 24px;
+  padding: 32px 24px;
+  text-align: center;
+  max-width: 280px;
+  width: 90%;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.popup-content h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+  color: rgba(49,49,49,0.85);
+}
+
+.popup-btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(135deg, #ff9fc2, #df7a96);
+  cursor: pointer;
+}
+
+/* Dropdowns large, scrollable */
+.dropdown {
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1.5px solid #ff9fc2;
+  outline: none;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  appearance: none; /* quita flecha default en algunos browsers */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-top: 4px;
+}
+
+/* Dropdown scroll para muchos items */
+.dropdown option {
+  padding: 8px;
+  font-size: 15px;
+  max-height: 36px;
+}
+
+/* Focus rosa pastel */
+.dropdown:focus {
+  border-color: #ff9fc2;
+  box-shadow: 0 0 0 2px rgba(255,159,194,0.25);
+}
+
+/* Aumentar altura de la lista desplegable para que se vea scroll */
+.dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+.dropdown::-webkit-scrollbar-thumb {
+  background-color: #ff9fc2;
+  border-radius: 3px;
+}
+.dropdown::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}

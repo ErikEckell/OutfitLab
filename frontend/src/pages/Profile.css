@@ -1,0 +1,392 @@
+.profile-container {
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #ff9fc2, #ffc1e3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.avatar-icon {
+  font-size: 40px;
+  color: white;
+}
+
+.profile-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff9fc2;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.profile-info p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+.profile-info-email {
+  font-size: 14px;
+  color: #333;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.profile-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #e0e0e0;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 100px;
+}
+
+.tab-btn.active {
+  background-color: #ff9fc2;
+  color: white;
+}
+
+.tab-btn:hover {
+  background-color: #d0d0d0;
+}
+
+.tab-btn.active:hover {
+  background-color: #ff8fb8;
+}
+
+.profile-content {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.preferences-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.preferences-subtitle {
+  font-size: 18px;
+  color: #ff9fc2;
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.preference-section h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.preference-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 25px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.preference-input:focus {
+  border-color: #ff9fc2;
+}
+
+.preference-input::placeholder {
+  color: #999;
+}
+
+.preferences-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.preference-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.color-tag {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.garment-tag {
+  background-color: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.remove-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.weather-question {
+  font-size: 14px;
+  color: #ff9fc2;
+  margin: 0 0 15px 0;
+  font-style: italic;
+}
+
+.weather-options {
+  display: flex;
+  gap: 10px;
+}
+
+.weather-btn {
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 25px;
+  background-color: white;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.weather-btn.active {
+  background-color: #ff9fc2;
+  color: white;
+  border-color: #ff9fc2;
+}
+
+.weather-btn:hover {
+  border-color: #ff9fc2;
+}
+
+.tab-content {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+  font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .profile-container {
+    padding: 15px;
+  }
+  
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .profile-info h1 {
+    font-size: 24px;
+  }
+  
+  .weather-options {
+    flex-direction: column;
+  }
+  
+  .preferences-list {
+    justify-content: center;
+  }
+}
+
+/* Profile main section styles */
+.profile-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.user-info-section h2 {
+  font-size: 20px;
+  color: #ff9fc2;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.user-details {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 4px solid #ff9fc2;
+}
+
+.user-details p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.user-details strong {
+  color: #ff9fc2;
+  font-weight: 600;
+}
+
+.outfits-section h2 {
+  font-size: 20px;
+  color: #ff9fc2;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+
+.outfits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.outfit-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.outfit-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.outfit-image-container {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.outfit-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.outfit-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.outfit-placeholder span {
+  font-size: 40px;
+  color: #999;
+}
+
+.outfit-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.outfit-info p {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+  text-transform: capitalize;
+  flex: 1;
+}
+
+.color-indicator {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+}
+
+.no-outfits {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+  font-style: italic;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-style: italic;
+}

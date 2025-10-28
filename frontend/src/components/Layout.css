@@ -1,0 +1,117 @@
+/* --- Device shell (outer frame) --- */
+.device-shell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  border-radius: 52px;
+  width: calc(440px + 56px);
+  height: calc(956px + 56px);
+  background: radial-gradient(120% 120% at 50% 0%, #3a3b42 0%, #16161a 50%, #09090b 100%);
+  box-shadow:
+    0 48px 80px rgba(0, 0, 0, 0.65),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.45);
+}
+
+.device-shell::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 34px;
+  background: #050507;
+  border-radius: 18px;
+  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.05);
+}
+
+.device-shell::after {
+  content: "";
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Base container (iPhone-like frame) --- */
+.app-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  height: 956px;
+  margin: 0 auto;
+  overflow-y: scroll;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  border-radius: 28px;
+  font-family: "Inter", sans-serif;
+}
+
+.app-container--no-topbar {
+  padding-top: 24px;
+}
+
+.app-container--no-navbar {
+  padding-bottom: 24px;
+}
+
+/* --- Contenido principal --- */
+.app-content {
+  flex: 1 1 auto;
+  padding: 130px 20px 80px 20px;
+  box-sizing: border-box;
+  min-height: 100%;
+  overflow-y: auto;
+}
+
+.app-content--no-topbar {
+  padding-top: 32px;
+}
+
+.app-content--no-navbar {
+  padding-bottom: 32px;
+}
+
+/* --- Navbar --- */
+.navbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  background: #7d7d7d;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.nav-item span {
+  font-size: 22px;
+}
+
+@media (max-width: 560px) {
+  .device-shell {
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+}

@@ -1,0 +1,159 @@
+.weather-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  padding: 96px 24px 96px;
+  box-sizing: border-box;
+  color: rgba(49, 49, 49, 0.76);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.wx-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #ff9fc2;
+  text-align: center;
+}
+
+.wx-subtitle {
+  margin: -12px 0 16px;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(49, 49, 49, 0.76);
+  text-align: center;
+}
+
+.wx-section-title {
+  width: 100%;
+  margin: 16px 0 0;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+  color: rgba(49, 49, 49, 0.76);
+}
+
+.wx-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.wx-icon {
+  width: 120px;
+  height: 120px;
+  display: grid;
+  place-items: center;
+  font-size: 64px;
+}
+
+.wx-temp {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1;
+  color: #ff9fc2;
+}
+
+.wx-condition {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+}
+
+.wx-minmax {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+}
+
+.wx-min,
+.wx-max {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.wx-minmax-number {
+  font-weight: 700;
+  font-size: 36px;
+  color: #ff9fc2;
+}
+
+.wx-minmax-label {
+  font-weight: 600;
+  font-size: 18px;
+  color: #79747e;
+}
+
+.wx-reco-title {
+  margin: 24px 0 0;
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+}
+
+.wx-reco-text {
+  margin: 8px 0 0;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #df7a96;
+}
+
+.wx-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+}
+
+.wx-card {
+  height: 132px;
+  display: grid;
+  place-items: center;
+  font-size: 40px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(121, 116, 126, 0.24);
+}
+
+.wx-cta {
+  margin-top: 8px;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #ff9fc2, #df7a96);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.wx-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(223, 122, 150, 0.32);
+}
+
+.wx-cta:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+@media (max-width: 480px) {
+  .weather-screen {
+    padding: 88px 20px 84px;
+  }
+
+  .wx-hero {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,64 @@
+.topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 114px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.topbar-title {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: #ff9fc2;
+}
+
+.topbar-title.clickable {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.topbar-title.clickable:hover {
+  opacity: 0.8;
+}
+
+.topbar-title span {
+  color: #00000082;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.topbar-logout-button {
+  border: none;
+  background: #ff9fc2;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.topbar-logout-button:not(:disabled):hover {
+  background: #ff7aa8;
+}
+
+.topbar-logout-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

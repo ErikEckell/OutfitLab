@@ -1,0 +1,91 @@
+.camera-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.camera-feed {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.capture-btn {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 4px solid white;
+  background: white;
+  cursor: pointer;
+  transition: transform 0.1s ease, opacity 0.3s ease;
+}
+
+.capture-btn:active {
+  transform: translateX(-50%) scale(0.9);
+}
+
+/* --- Vista de foto capturada --- */
+.photo-result {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.captured-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.photo-options {
+  position: absolute;
+  bottom: 60px;
+  display: flex;
+  gap: 20px;
+}
+
+.retake-btn,
+.accept-btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.retake-btn {
+  background: #ff5c5c;
+  color: white;
+}
+
+.accept-btn {
+  background: #42c96a;
+  color: white;
+}
+
+.retake-btn:hover {
+  background: #e64a4a;
+}
+
+.accept-btn:hover {
+  background: #36b55a;
+}
+
+.hidden-canvas {
+  display: none;
+}

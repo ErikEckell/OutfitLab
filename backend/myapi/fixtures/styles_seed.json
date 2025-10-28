@@ -1,0 +1,22 @@
+[
+  {"model":"myapi.style","pk":1,"fields":{"name":"Casual","color_palette":{"primary":["#2B8A3E","#FFFFFF"],"accent":["#F4A261","#264653"]},"event_type":"everyday"}},
+  {"model":"myapi.style","pk":2,"fields":{"name":"Formal","color_palette":{"primary":["#000000","#FFFFFF"],"accent":["#C0C0C0"]},"event_type":"formal"}},
+  {"model":"myapi.style","pk":3,"fields":{"name":"Business Casual","color_palette":{"primary":["#1F4E78","#E6E6E6"],"accent":["#8DA0CB"]},"event_type":"work"}},
+  {"model":"myapi.style","pk":4,"fields":{"name":"Sporty","color_palette":{"primary":["#0B6E4F","#FFFFFF"],"accent":["#FF6B6B"]},"event_type":"sport"}},
+  {"model":"myapi.style","pk":5,"fields":{"name":"Bohemian","color_palette":{"primary":["#8B5E3C","#F0E6D2"],"accent":["#C65D7B","#2E8B57"]},"event_type":"festival"}},
+  {"model":"myapi.style","pk":6,"fields":{"name":"Minimalist","color_palette":{"primary":["#F8F9FA","#0F1724"],"accent":["#94A3B8"]},"event_type":"everyday"}},
+  {"model":"myapi.style","pk":7,"fields":{"name":"Streetwear","color_palette":{"primary":["#111827","#FFDD57"],"accent":["#EF4444"]},"event_type":"casual"}},
+  {"model":"myapi.style","pk":8,"fields":{"name":"Vintage","color_palette":{"primary":["#6B4C3B","#F3E9E2"],"accent":["#9B7E5A"]},"event_type":"retro"}},
+  {"model":"myapi.style","pk":9,"fields":{"name":"Romantic","color_palette":{"primary":["#FCE7F3","#FFE4E1"],"accent":["#C77DFF"]},"event_type":"date"}},
+  {"model":"myapi.style","pk":10,"fields":{"name":"Chic","color_palette":{"primary":["#2B2B2B","#FFFFFF"],"accent":["#D4AF37"]},"event_type":"evening"}},
+  {"model":"myapi.style","pk":11,"fields":{"name":"Smart Casual","color_palette":{"primary":["#2F5061","#F1F5F9"],"accent":["#E07A5F"]},"event_type":"work"}},
+  {"model":"myapi.style","pk":12,"fields":{"name":"Beachwear","color_palette":{"primary":["#00A8E8","#FDFCDC"],"accent":["#FF7A00"]},"event_type":"beach"}},
+  {"model":"myapi.style","pk":13,"fields":{"name":"Evening Wear","color_palette":{"primary":["#0B0C10","#BFAFB2"],"accent":["#9B111E"]},"event_type":"evening"}},
+  {"model":"myapi.style","pk":14,"fields":{"name":"Athletic","color_palette":{"primary":["#13293D","#E2F0F9"],"accent":["#F94144"]},"event_type":"sport"}},
+  {"model":"myapi.style","pk":15,"fields":{"name":"Workwear","color_palette":{"primary":["#3B3B3B","#D9D9D9"],"accent":["#2A9D8F"]},"event_type":"work"}},
+  {"model":"myapi.style","pk":16,"fields":{"name":"Preppy","color_palette":{"primary":["#0B5E8A","#FCF8F0"],"accent":["#E76F51"]},"event_type":"school"}},
+  {"model":"myapi.style","pk":17,"fields":{"name":"Gothic","color_palette":{"primary":["#000000","#2F2F2F"],"accent":["#800020"]},"event_type":"alternate"}},
+  {"model":"myapi.style","pk":18,"fields":{"name":"Punk","color_palette":{"primary":["#0D0D0D","#FF3B3B"],"accent":["#FFD166"]},"event_type":"alternate"}},
+  {"model":"myapi.style","pk":19,"fields":{"name":"Retro","color_palette":{"primary":["#FFB703","#590D22"],"accent":["#8A2BE2"]},"event_type":"retro"}},
+  {"model":"myapi.style","pk":20,"fields":{"name":"Eco-Friendly","color_palette":{"primary":["#2E8B57","#F0F4C3"],"accent":["#6B8E23"]},"event_type":"sustainable"}}
+]

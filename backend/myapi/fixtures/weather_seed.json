@@ -1,0 +1,130 @@
+[
+  {
+    "model": "myapi.weather",
+    "pk": 1,
+    "fields": {
+      "date": "2025-10-01",
+      "temperature": 28.5,
+      "feels_like": 30.0,
+      "humidity": 70.0,
+      "wind": 3.2,
+      "conditions": "tropical",
+      "precipitation_prob": 0.6,
+      "cloudiness": 75,
+      "uv_index": 9.0,
+      "created_at": "2025-10-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "myapi.weather",
+    "pk": 2,
+    "fields": {
+      "date": "2025-10-02",
+      "temperature": 22.0,
+      "feels_like": 22.0,
+      "humidity": 55.0,
+      "wind": 2.1,
+      "conditions": "partly cloudy",
+      "precipitation_prob": 0.1,
+      "cloudiness": 40,
+      "uv_index": 6.0,
+      "created_at": "2025-10-02T00:00:00Z"
+    }
+  },
+  {
+    "model": "myapi.weather",
+    "pk": 3,
+    "fields": {
+      "date": "2025-10-03",
+      "temperature": 10.5,
+      "feels_like": 9.0,
+      "humidity": 85.0,
+      "wind": 5.5,
+      "conditions": "rainy",
+      "precipitation_prob": 0.9,
+      "cloudiness": 95,
+      "uv_index": 1.0,
+      "created_at": "2025-10-03T00:00:00Z"
+    }
+  },
+  {
+    "model": "myapi.weather",
+    "pk": 4,
+    "fields": {
+      "date": "2025-10-04",
+      "temperature": -2.0,
+      "feels_like": -5.0,
+      "humidity": 80.0,
+      "wind": 6.0,
+      "conditions": "snowy",
+      "precipitation_prob": 0.8,
+      "cloudiness": 100,
+      "uv_index": 0.5,
+      "created_at": "2025-10-04T00:00:00Z"
+    }
+  },
+  {
+    "model": "myapi.weather",
+    "pk": 5,
+    "fields": {
+      "date": "2025-10-05",
+      "temperature": 16.0,
+      "feels_like": 16.0,
+      "humidity": 50.0,
+      "wind": 1.5,
+      "conditions": "sunny",
+      "precipitation_prob": 0.0,
+      "cloudiness": 5,
+      "uv_index": 7.0,
+      "created_at": "2025-10-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "myapi.weather",
+    "pk": 6,
+    "fields": {
+      "date": "2025-10-06",
+      "temperature": 12.0,
+      "feels_like": 11.0,
+      "humidity": 60.0,
+      "wind": 4.0,
+      "conditions": "windy",
+      "precipitation_prob": 0.05,
+      "cloudiness": 30,
+      "uv_index": 3.0,
+      "created_at": "2025-10-06T00:00:00Z"
+    }
+  },
+  {
+    "model": "myapi.weather",
+    "pk": 7,
+    "fields": {
+      "date": "2025-10-07",
+      "temperature": 24.0,
+      "feels_like": 25.0,
+      "humidity": 40.0,
+      "wind": 2.5,
+      "conditions": "dry sunny",
+      "precipitation_prob": 0.0,
+      "cloudiness": 2,
+      "uv_index": 8.5,
+      "created_at": "2025-10-07T00:00:00Z"
+    }
+  },
+  {
+    "model": "myapi.weather",
+    "pk": 8,
+    "fields": {
+      "date": "2025-10-08",
+      "temperature": 18.0,
+      "feels_like": 18.0,
+      "humidity": 65.0,
+      "wind": 3.0,
+      "conditions": "overcast",
+      "precipitation_prob": 0.2,
+      "cloudiness": 85,
+      "uv_index": 2.0,
+      "created_at": "2025-10-08T00:00:00Z"
+    }
+  }
+]
